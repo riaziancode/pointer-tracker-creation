@@ -4,26 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pointer Movement</title>
-    <style>
-        *{
-            background-color: rgb(225, 253, 253);
-            overflow: hidden;
-        }
-        h1{
-            width: fit-content;
-            height: 50px;
-            margin: auto;
-            top: 40px;
-        }
-        #pointer{
-            width: 15px;
-            height: 15px;
-            background-color: rgb(188, 28, 97);
-            border-radius: 50%;
-            position: absolute;
-            transition: all .09s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
@@ -31,16 +12,7 @@
         <div id="pointer"> </div>
     </div>
 
-    <script>
-        window.addEventListener('pointermove', (event)=> {
-            let pointer = document.getElementById('pointer');
-        
-            let top = event.clientY;
-            let left = event.clientX;
-        
-            pointer.style.left = (`${left-4}px`);
-            pointer.style.top = `${top}px`;
-        })
-    </script>
+<script src="script.js"> </script>        
+
 </body>
 </html>

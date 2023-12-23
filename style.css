@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(225, 253, 253);
+    overflow: hidden;
+}
+h1{
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    top: 40px;
+}
+#pointer{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(188, 28, 97);
+    border-radius: 50%;
+    position: absolute;
+    transition: all .09s ease;
+}
